@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+#thread {
+  width: 50%;
+  max-width: 1000px;
+  overflow-wrap: break-word;
+  border: 1px solid #eee;
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+
+/*********form関連　ここから***********/
+/*
+ * form内の要素のフォントを統一
+ */
+input,
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+.post {
+  width: calc(100% - 10em);
+  margin: 2px 0px;
+}
+
+.post-contents {
+  height: 105px;
+  resize: none;
+  padding: 1px 3px;
+  vertical-align: top;
+}
+/*********form関連　ここまで***********/
+
+/*********投稿内容関連　ここから***********/
+#article {
+  padding: 5px;
+}
+
+#article .id-name-time,
+#article .contents{
+font-size: 14px
+;}
+
+.title {
+  font-weight: bold;
+}
+
+.delete-btn {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  border: 0;
+  line-height: 2;
+  padding: 0 10px;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  background-color: #cccccc;
+}
+
+.btn:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+.btn:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+/*********投稿内容関連　ここまで***********/
+
+/*********ページング関連　ここから***********/
+.thread-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navmenu {
+  margin-top: 1em;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+p.page {
+  text-align: right;
+}
+/*********ページング関連　ここまで***********/
